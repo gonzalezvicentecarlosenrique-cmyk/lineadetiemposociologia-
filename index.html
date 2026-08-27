@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Línea de tiempo — Desarrollo histórico de la Sociología</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="progress-bar"></div>
+
+  <div id="year-indicator">
+    <span class="pulse-dot"></span>
+    <span>AÑO: <span id="current-year-display">1701</span></span>
+  </div>
+
+  <header class="hero">
+    <div class="eyebrow">Historia del pensamiento social</div>
+    <h1>El tejido de la <em>Sociología</em>: de la Ilustración al siglo&nbsp;XXI</h1>
+    <p class="hero-sub">Una línea de tiempo cronológica de los procesos históricos, pensadores y escuelas que dieron forma a la disciplina que estudia la vida en sociedad, con fechas precisas de inicio, obras clave y vigencia de cada corriente.</p>
+    <div class="hero-span">
+      <span>1701</span>
+      <span class="dot"></span>
+      <span class="line"></span>
+      <span class="dot"></span>
+      <span>ACTUALIDAD</span>
+    </div>
+    
+    <div class="controls">
+      <input type="text" id="timeline-search" class="search-input" placeholder="Buscar autor, obra o concepto..." aria-label="Buscar en la línea de tiempo">
+      <div class="legend">
+        <button class="legend-btn active" data-filter="all">Todos</button>
+        <button class="legend-btn" data-filter="context"><i class="i-context"></i>Contexto histórico</button>
+        <button class="legend-btn" data-filter="founders"><i class="i-founders"></i>Precursores y fundadores</button>
+        <button class="legend-btn" data-filter="schools"><i class="i-schools"></i>Escuelas y paradigmas</button>
+        <button class="legend-btn" data-filter="contemporary"><i class="i-contemporary"></i>Pensamiento contemporáneo</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="timeline" id="timeline-container">
+      <div class="timeline-progress-line" id="timeline-line"></div>
+
+      <div class="node context" data-category="context" data-year="1701 – 1800">
+        <span class="node-tag">Contexto histórico</span>
+        <div class="node-head">
+          <span class="node-name">La Ilustración</span>
+          <span class="node-date">1701 – 1800</span>
+        </div>
+        <p>Movimiento intelectual iniciado formalmente a inicios del siglo XVIII en Europa y extendido hasta finales del mismo siglo. En un contexto marcado por el absolutismo monárquico y los dogmas religiosos, impulsó el uso de la razón, el saber y el método científico por encima de la fe, sentando las bases filosóficas y metodológicas para investigar la sociedad desde una perspectiva empírica y ordenada.</p>
+      </div>
+
+      <div class="node founders" data-category="founders" data-year="1760 – 1825">
+        <span class="node-tag">Precursor</span>
+        <div class="node-head">
+          <span class="node-name">Henri de Saint-Simon</span>
+          <span class="node-date">1760 – 1825</span>
+        </div>
+        <p>Precursor de la sociología. Propuso estudiar científicamente a la sociedad como un organismo vivo mediante su «fisiología social» e introdujo, tras el final de la Revolución Francesa, los fundamentos teóricos para comprender la división de clases y el impacto del orden industrial emergente.</p>
+      </div>
+
+      <div class="node context" data-category="context" data-year="1780 – 1840">
+        <span class="node-tag">Contexto histórico</span>
+        <div class="node-head">
+          <span class="node-name">La Revolución Industrial</span>
+          <span class="node-date">1780 – 1840</span>
+        </div>
+        <p>Proceso de transformación económica y tecnológica iniciado con la invención e introducción de la máquina de vapor en Gran Bretaña; su primera gran etapa de expansión concluyó con la consolidación de la red ferroviaria e industrial. Europa experimentó una rápida urbanización, migración masiva del campo a las ciudades, fortalecimiento del capitalismo y surgimiento del trabajo asalariado, generando graves conflictos entre la burguesía y el proletariado urbano.</p>
+      </div>
+
+      <div class="node context" data-category="context" data-year="1789 – 1799">
+        <span class="node-tag">Contexto histórico</span>
+        <div class="node-head">
+          <span class="node-name">La Revolución Francesa</span>
+          <span class="node-date">1789 – 1799</span>
+        </div>
+        <p>Comenzó el 14 de julio de 1789 con la toma de la Bastilla y finalizó el 9 de noviembre de 1799 con el golpe de Estado de Napoleón Bonaparte. Desbarató el régimen feudal y la monarquía absoluta en Francia, generando una profunda transformación política que trastornó el orden tradicional y puso de manifiesto la necesidad de una ciencia capaz de comprender la inestabilidad y los cambios sociales.</p>
+      </div>
+
+      <div class="node founders" data-category="founders" data-year="1798 – 1857">
+        <span class="node-tag">Fundador · Acuña el término</span>
+        <div class="node-head">
+          <span class="node-name">Augusto Comte</span>
+          <span class="node-date">1798 – 1857</span>
+        </div>
+        <p>Con el fin de restablecer el orden de la Francia posrevolucionaria, acuñó formalmente el término "sociología" en 1838 en su <i>Curso de filosofía positiva</i> y formuló la Ley de los Tres Estados (teológico, metafísico y positivo) para explicar la evolución del conocimiento humano hacia la etapa científica.</p>
+        <p class="milestone"><b>Hito clave:</b> 1838 — se acuña la palabra "sociología".</p>
+      </div>
+
+      <div class="node founders" data-category="founders" data-year="1818 – 1883">
+        <span class="node-tag">Fundador · Materialismo histórico</span>
+        <div class="node-head">
+          <span class="node-name">Karl Marx</span>
+          <span class="node-date">1818 – 1883</span>
+        </div>
+        <p>En el auge del capitalismo industrial europeo, desarrolló el materialismo histórico, cuyos postulados centrales arrancan con la publicación de <i>El Manifiesto Comunista</i> y se afianzan con <i>El Capital</i>, sosteniendo que la base económica condiciona la estructura social y que la lucha de clases es el motor de la historia.</p>
+        <p class="milestone"><b>Obras clave:</b> 1848 — <i>El Manifiesto Comunista</i> · 1867 — <i>El Capital</i>.</p>
+      </div>
+
+      <div class="node founders" data-category="founders" data-year="1820 – 1903">
+        <span class="node-tag">Fundador · Darwinismo social</span>
+        <div class="node-head">
+          <span class="node-name">Herbert Spencer</span>
+          <span class="node-date">1820 – 1903</span>
+        </div>
+        <p>Durante la era victoriana británica, desarrolló su contribución al darwinismo social entre la publicación de sus <i>Principios de Biología</i> y la conclusión de su sistema de filosofía sintética, sosteniendo que las sociedades funcionan como organismos vivos que evolucionan mediante la "supervivencia del más apto".</p>
+        <p class="milestone"><b>Periodo teórico:</b> 1864 – 1896.</p>
+      </div>
+
+      <div class="node founders" data-category="founders" data-year="1858 – 1917">
+        <span class="node-tag">Fundador · Institucionalización</span>
+        <div class="node-head">
+          <span class="node-name">Émile Durkheim</span>
+          <span class="node-date">1858 – 1917</span>
+        </div>
+        <p>En una Francia que se volvía menos religiosa, logró que la sociología se estableciera formalmente como disciplina. Fundó la primera cátedra universitaria y ese mismo año publicó <i>Las reglas del método sociológico</i>, donde explicó que la sociología debía estudiar los hechos sociales.</p>
+        <p class="milestone"><b>Hito clave:</b> 1895 — primera cátedra universitaria y publicación de <i>Las reglas del método sociológico</i>.</p>
+      </div>
+
+      <div class="node founders" data-category="founders" data-year="1864 – 1920">
+        <span class="node-tag">Fundador · Sociología comprensiva</span>
+        <div class="node-head">
+          <span class="node-name">Max Weber</span>
+          <span class="node-date">1864 – 1920</span>
+        </div>
+        <p>En una Alemania industrializada y burocrática, su periodo más influyente transcurrió entre <i>La ética protestante y el espíritu del capitalismo</i> y <i>Economía y sociedad</i>, advancing la sociología comprensiva (Verstehen) hacia la interpretación de las motivaciones subjetivas de la acción social, la burocracia y la autoridad.</p>
+        <p class="milestone"><b>Periodo teórico:</b> 1905 – 1920.</p>
+      </div>
+
+      <div class="node schools" data-category="schools" data-year="1923 – 1969">
+        <span class="node-tag">Escuela · Teoría crítica</span>
+        <div class="node-head">
+          <span class="node-name">La Escuela de Frankfurt</span>
+          <span class="node-date">1923 – 1969</span>
+        </div>
+        <p>Establecida oficialmente el 3 de febrero de 1923 con la fundación del Instituto de Investigación Social en Alemania; su periodo de teoría clásica llegó a su fin con la muerte de Theodor Adorno. Autores como Horkheimer, Adorno y Marcuse desarrollaron la teoría crítica para cuestionar el capitalismo tardío, la industria cultural y la alienación moderna.</p>
+      </div>
+
+      <div class="node contemporary" data-category="contemporary" data-year="1930 – 2002">
+        <span class="node-tag">Teoría contemporánea · Habitus</span>
+        <div class="node-head">
+          <span class="node-name">Pierre Bourdieu</span>
+          <span class="node-date">1930 – 2002</span>
+        </div>
+        <p>Su principal contribución teórica comenzó con la publicación de <i>La distinción</i>, en la que desarrolló las teorías del habitus, los campos sociales y los capitales (económico, cultural y social).</p>
+        <p class="milestone"><b>Obra clave:</b> 1979 — <i>La distinción</i>.</p>
+      </div>
+
+      <div class="node schools" data-category="schools" data-year="1937 – 1979">
+        <span class="node-tag">Paradigma</span>
+        <div class="node-head">
+          <span class="node-name">Funcionalismo estructural</span>
+          <span class="node-date">1937 – 1979</span>
+        </div>
+        <p>Comenzó con la publicación de <i>La estructura de la acción social</i>, de Talcott Parsons, y dominó la sociología estadounidense hasta el año de su muerte. Junto con Robert K. Merton, explicaron a la sociedad como un sistema integrado de instituciones interdependientes que funcionan juntas para preservar el orden social y el equilibrio.</p>
+      </div>
+
+      <div class="node schools" data-category="schools" data-year="1937 – 1980">
+        <span class="node-tag">Paradigma</span>
+        <div class="node-head">
+          <span class="node-name">Interaccionismo simbólico</span>
+          <span class="node-date">1937 – 1980</span>
+        </div>
+        <p>Acuñado y teorizado por Herbert Blumer, derivado de las ideas anteriores de George Herbert Mead; dominó hasta 1980. Es una teoría microsociológica que analiza cómo las personas crean la realidad con el lenguaje, los símbolos y la interacción cotidiana.</p>
+      </div>
+
+      <div class="node contemporary" data-category="contemporary" data-year="1938 – Presente">
+        <span class="node-tag">Teoría contemporánea · Estructuración</span>
+        <div class="node-head">
+          <span class="node-name">Anthony Giddens</span>
+          <span class="node-date">1938 – presente</span>
+        </div>
+        <p>Pensador activo hasta hoy. Su principal contribución a las teorías de la sociología fue introducida con su libro <i>La Constitución de la Sociedad</i>, donde formuló la teoría de la estructuración, dirigida a superar el conflicto entre la agencia individual y las reglas sociales.</p>
+        <p class="milestone"><b>Obra clave:</b> 1984 — <i>La Constitución de la Sociedad</i>.</p>
+      </div>
+
+      <div class="node schools" data-category="schools" data-year="1959 – 1989">
+        <span class="node-tag">Paradigma</span>
+        <div class="node-head">
+          <span class="node-name">Teoría del conflicto</span>
+          <span class="node-date">1959 – 1989</span>
+        </div>
+        <p>Surgió con la publicación de <i>Clases sociales y sus conflictos en la sociedad industrial</i>, de Ralf Dahrendorf, y dominó hasta el fin de la Guerra Fría. Reformula las ideas marxistas y argumenta que los conflictos por el poder, la riqueza y el estatus son inevitables y resultan en cambios sociales.</p>
+      </div>
+
+      <div class="node contemporary" data-category="contemporary" data-year="2000 – Actualidad">
+        <span class="node-tag">Pensamiento contemporáneo</span>
+        <div class="node-head">
+          <span class="node-name">Sociología del siglo XXI</span>
+          <span class="node-date">2000 – actualidad</span>
+        </div>
+        <p>Comenzó con el inicio de un nuevo milenio y continúa desarrollándose hasta hoy. En esta etapa, el enfoque del análisis se centra en la globalización, las redes sociales, la inteligencia artificial, el trabajo precario en plataformas digitales, la crisis climática y la dinámica de los movimientos sociales.</p>
+      </div>
+
+    </div>
+
+    <div class="closing">
+      <h3>"Estudiar lo social es estudiar el hilo que nos mantiene unidos."</h3>
+      <p>De la razón ilustrada a las redes digitales, la Sociología ha reinventado sus herramientas cada vez que la sociedad misma ha cambiado de forma.</p>
+    </div>
+
+    <footer>LÍNEA DE TIEMPO · HISTORIA DE LA SOCIOLOGÍA · 1701 – ACTUALIDAD</footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
